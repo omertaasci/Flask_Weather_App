@@ -1,12 +1,9 @@
-# Install the required packages using:
-# pip install Flask requests
-
 from flask import Flask, render_template, request
 import requests
 
 app = Flask(__name__)
 
-API_KEY = 'b8a922c1fc0b8ef2f698fea10b957f83'
+API_KEY = 'API_KEY' #enter your own api key from openweather
 BASE_URL = 'http://api.openweathermap.org/data/2.5/weather'
 
 @app.route('/', methods=['GET', 'POST'])
